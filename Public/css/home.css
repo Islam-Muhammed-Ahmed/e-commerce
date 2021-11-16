@@ -1,0 +1,227 @@
+/* nice info to import css folders with puting it in header tag */
+@import "nav.css";
+@import "footer.css";
+
+/* hero section header */
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/header-bg-img/header.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.hero-section .logo{
+    width: 40vw;
+    height: 150px;
+    display: block;
+    margin: 100px auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* product section */
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-category{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.product-container{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.product-img{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 90%;
+    background-color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn{
+    background: #efefef;
+}
+
+.product-info{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+.product-short-desc{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+    overflow: hidden;
+    opacity: 0.5;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price{
+    text-decoration: line-through;
+    opacity: 0.5;
+    margin-left: 20px;
+}
+
+.pre-btn,
+.nxt-btn{
+    position: absolute;
+    width: 8vw;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, #fff 100%);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 8;
+    box-shadow: none !important;
+
+}
+
+.pre-btn{
+    left: 0;
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn span,
+.nxt-btn span{
+    opacity: 0.2;
+}
+
+.pre-btn:hover span,
+.nxt-btn:hover span{
+    opacity: 1;
+}
+
+/* collections */
+
+.collection-container{
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px; */
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}

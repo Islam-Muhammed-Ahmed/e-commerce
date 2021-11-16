@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda : Create Account </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icon-moon-font/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+        <!-- sign up preloader -->
+    <img src="img/loader/480px-Loader.gif" class="loader" alt="">
+
+    <!-- alert box -->
+    <div class="alert-box">
+        <span class="icon-cross alert"></span>
+        <p class="alert-msg">Error message</p>
+    </div>
+    <!-- section sign up -->
+    <section class="container">
+        <div class="row">          
+            <div class="form col-12">
+                <img src="img/logo/logo.png" class="logo col-12" alt="">
+                <input type="text" autocomplete="on" id="name" placeholder="username">
+                <input type="email" autocomplete="on" id="email" placeholder="Enter email">
+                <input type="password" autocomplete="on" id="password" placeholder="password">
+                <input type="tel" autocomplete="on" id="number" placeholder="phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                
+                <input type="checkbox" checked  name="checkbox" class="checkbox" id="terms">
+                <label for="terms">agree to our <a href="">terms and conditions</a></label>
+                <br>
+                <input type="checkbox" name="" class="checkbox" id="notifications">
+                <label for="notifications">recieve upcoming offers and events mails</label>
+                
+                <button class="btn submit-btn">create account</button>
+                
+                <a href="/login" class="link">already have an account? Log in here. </a>
+            </div>    
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/token.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
